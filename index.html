@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8PWD5VHBCZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8PWD5VHBCZ');
+        </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Manzanita AI</title>
     <style>
+        @font-face {
+            font-family: 'Graphik';
+            src: url('Graphik-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Graphik';
+            src: url('Graphik-Semibold.woff2') format('woff2');
+            font-weight: 600;
+            font-style: normal;
+        }
         html, body {
             margin: 0;
             padding: 0;
-            font-family: 'Helvetica', sans-serif;
-            font-size: 12px;
+            font-family: 'Graphik', 'Helvetica', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
         }
-
+        b, .logo {
+            font-weight: 600;
+        }
+        .logo {
+            font-size: 90px;
+            background: linear-gradient(294deg,#F044F0,#3699F6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
         body {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto; 
+            padding: 20px;
         }
-
-        .image-container {
-            width: 60%;
-            max-width: 100%;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        a {
+            color: #3699F6;          
+            text-decoration: none;     
+            transition: color 0.3s;    
         }
-
-        .center-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px; /* Added some margin between the image and the form */
+        a:hover {
+            color: #F044F0;           
         }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 100%; /* to make form stretch full width of the container */
-            padding: 15px;
-            border-radius: 0px;
+        a:visited {
+            color: #3699F6;          
         }
-
-        input[type="email"], button {
-            padding: 10px 20px;
-            margin: 10px 0;
-            box-sizing: border-box; /* ensures padding doesn't affect width */
-        }
-
-        input[type="email"] {
-            border: 1px solid gray;
-            width: 50%; 
-            margin: auto;
-        }
-
-        button {
-            border: none;
-            border-radius: 4px;
-            width: 50%; /* Updated button width */
-            background-color: #EA33EF;
-            color: white;
-            cursor: pointer;
-            margin: auto; /* To center the button */
-            transition: all 0.3s ease; /* Add transitions for smooth animations */
-        }
-
-        button:hover {
-            background-color: #d429db; /* A slightly darker shade for hover effect */
-        }
-
-        /* Mobile styles */
-        @media screen and (max-width: 768px) {
-            input[type="email"], button {
-                width: 90%; /* Make it occupy 90% of the viewport width */
+        @media (max-width: 414px) {
+           .logo {
+            font-size: 55px;  
             }
         }
-
+        .bottom-stripe {
+            height: 20px;
+            width: 100%; 
+            background: linear-gradient(294deg,#3699F6, #F044F0);
+            position: fixed;
+            bottom: 0; 
+            left: 0; 
+            z-index: 1000;
+        }
     </style>
 </head>
-
 <body>
-    <div class="image-container">
-        <img src="manzanita-splash.png" alt="Manzanita AI: Coding for Idea People" class="center-image">
-        <form action="https://submit-form.com/s34RlG0m">
-            <input type="email" name="name" placeholder="Email Address" required>
-            <button type="submit"><b>Join Waitlist</b></button>
-        </form>
-        <p>© 2023, Manzanita Artificial Intelligence Company</p>
-    </div>
+    <div class="logo">Manzanita AI</div>
+    <p>You've dreamt up the next billion-dollar app.</p>
+    <p><b>Now it's time to build.</b></p>
+    <p>Then reality hits.</p>
+    <p>You try, and fail, to recruit a technical co-founder.</p>
+    <p>So you dip into savings and hire an offshore dev shop to build a prototype. Mediocre results.</p>
+    <p>“Maybe I'll learn how to code” you think, naively. But after a week of late-night Codecademy sessions and a splitting headache from too many syntax errors you're no closer to your goal.</p>
+    <p>IPO dreams swirl the drain.</p>
+    <p><b>Manzanita AI to the rescue.</b></p>
+    <p>Manzanita harnesses the power of artificial intelligence to deliver an <b>elite web app engineering team</b> (including a product manager, front and back end engineers, QA tester, and a devops engineer) at a fraction of the cost: <b>$5,000 / month</b>.</p>
+    <p>Our <b>powerful swarm of AI agents</b> to turn wireframes into full-stack, fully deployed, production-grade web apps in just a few days. Once deployed, our AI-powered team is on call 24/7/365 to keep everything updated and secure. On top of that, we'll let you make as many changes as you'd like.</p>
+    <p>We're building a world where creating software is as easy as imagining it.</p>
+    <p><b>Ready to talk?</b></p>
+    <p>Send us a note with your name, a link to your Figma designs, and a brief description of your app. We'll take it from there: <a href="mailto:buildmyapp@manzanita.ai?subject=App Inquiry&body=Name:%0D%0ALink to Figma Designs:%0D%0ADescription of App:" target="_blank">buildmyapp@manzanita.ai</a>
+    </p>
+    <p><b>Power to the idea people!</b></p>
+    <p>Love,</p>
+    <p><a href="https://www.linkedin.com/in/max-ockner-16112489/" target="_blank" rel="noopener noreferrer">Max</a> & <a href="https://www.linkedin.com/in/lukewhiting/" target="_blank" rel="noopener noreferrer">Luke</a></p>
+    <p>© 2023, Manzanita Artificial Intelligence Company</p>
+    <div class="bottom-stripe"></div>
 </body>
-
 </html>
